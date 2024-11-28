@@ -13,6 +13,8 @@ description: |-
 ## Example Usage
 
 ```terraform
+# Copyright (c) NSICG
+
 provider "awsutils" {
   # example configuration here
 }
