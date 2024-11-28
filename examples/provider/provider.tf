@@ -1,3 +1,3 @@
-provider "scaffolding" {
+provider "awsutils" {
   # example configuration here
 }

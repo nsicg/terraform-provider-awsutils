@@ -33,7 +33,7 @@ type ScaffoldingProviderModel struct {
 }
 
 func (p *ScaffoldingProvider) Metadata(ctx context.Context, req provider.MetadataRequest, resp *provider.MetadataResponse) {
-	resp.TypeName = "scaffolding"
+	resp.TypeName = "awsutils"
 	resp.Version = p.version
 }
 
@@ -73,9 +73,7 @@ func (p *ScaffoldingProvider) Resources(ctx context.Context) []func() resource.R
 }
 
 func (p *ScaffoldingProvider) DataSources(ctx context.Context) []func() datasource.DataSource {
-	return []func() datasource.DataSource{
-		NewExampleDataSource,
-	}
+	return []func() datasource.DataSource{}
 }
 
 func (p *ScaffoldingProvider) Functions(ctx context.Context) []func() function.Function {
