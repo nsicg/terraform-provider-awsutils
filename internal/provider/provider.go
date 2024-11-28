@@ -15,11 +15,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 )
 
-// Ensure ScaffoldingProvider satisfies various provider interfaces.
+// Ensure AwsutilsProvider satisfies various provider interfaces.
 var _ provider.Provider = &ScaffoldingProvider{}
 var _ provider.ProviderWithFunctions = &ScaffoldingProvider{}
 
-// ScaffoldingProvider defines the provider implementation.
+// AwsutilsProvider defines the provider implementation.
 type ScaffoldingProvider struct {
 	// version is set to the provider version on release, "dev" when the
 	// provider is built and ran locally, and "test" when running acceptance
